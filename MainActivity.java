@@ -14,7 +14,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     // 0: yellow, 1: red, 2: empty
-
     int[] gameState = {2, 2, 2, 2, 2, 2, 2, 2, 2};
 
     int[][] winningPositions = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}, {0, 3, 6}, {1, 4, 7}, {2, 5, 8}, {0, 4, 8}, {2, 4, 6}};
@@ -98,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
         winnerTextView.setVisibility(View.INVISIBLE);
 
         GridLayout gridLayout = (GridLayout) findViewById(R.id.gridLayout);
-
         for(int i=0; i<gridLayout.getChildCount(); i++) {
 
             ImageView counter = (ImageView) gridLayout.getChildAt(i);
